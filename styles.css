@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Euclid Circular B";
   font-weight: 300;
-  src: url('https://static1.squarespace.com/static/5ba8ee0cc46f6d036e3f7ff3/t/5ba8efd6c83025fa5686203e/1537798102602/EuclidCircularB-Light.otf');
+  src: url('https://assets.nested.com/fonts/EuclidCircularB-Light-WebS.woff2') format('woff2');
 }
 
 @font-face {
   font-family: "Euclid Circular B";
   font-weight: 500;
-  src: url('https://static1.squarespace.com/static/5ba8ee0cc46f6d036e3f7ff3/t/5ba8efd6c83025fa5686203e/1537798102602/EuclidCircularB-Medium.otf');
+  src: url('https://assets.nested.com/fonts/EuclidCircularB-Medium-WebS.woff2') format('woff2');
 }
 
 * {
