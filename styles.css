@@ -231,6 +231,11 @@ img {
   margin-top: 10px;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tag {
   background-color: #353F52;
   color: #fff;
