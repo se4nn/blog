@@ -12,6 +12,9 @@
 
 * {
   font-family: "Euclid Circular B";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Euclid Circular B", sans-serif;
 }
 
 h1 {
@@ -60,9 +63,10 @@ p {
 }
 
 nav {
-  width: 100%;
+  width: calc(100% - 40px);
   height: 110px;
   max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -76,7 +80,7 @@ nav {
 }
 
 .button {
-  color: rgb(214, 233, 255);
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -89,13 +93,19 @@ nav {
   padding: 17px 40px;
   text-decoration: none;
   transition: all 0.1s ease 0s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(34, 34, 34, 0.1) 0px 4px 8px 0px;
 }
 
 .dropdown {
   cursor: pointer;
   position: relative;
   display: flex;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .dropdown:hover .dropdown_list, .dropdown_list:hover {
@@ -108,12 +118,12 @@ nav {
   position: absolute;
   width: 310px;
   background: #fff;
-  margin-left: -115px;
+  margin-left: -93px;
   border-radius: 4px;
   box-shadow: rgba(34, 34, 34, 0.09) 0px 4px 8px 0px;
   padding: 15px;
   z-index: 100;
-  margin-top: 28px;
+  margin-top: 35px;
 }
 
 .dropdown_list::before {
@@ -154,6 +164,8 @@ nav {
 
 nav h4 {
   opacity: 1;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .dropdown_item h4 {
@@ -168,6 +180,15 @@ nav h4 {
   margin: 2px 15px 0 15px;
   padding: 10px 0;
   border-bottom: 2px solid #353F52;
+}
+
+.dropdown:hover {
+  border-bottom: none;
+  margin: 2px 15px 2px 15px;
+}
+
+.dropdown_900, .dropdown_1000 {
+  display: none;
 }
 
 .subtitle {
@@ -501,6 +522,30 @@ h3 + .img_fw {
 }
 
 /* Media Queries */
+
+@media only screen and (max-width: 900px) {
+
+.dropdown_900 {
+  display: block;
+}
+
+.nav_item_900 {
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .dropdown_1000 {
+    display: block;
+  }
+
+  .nav_item_1000 {
+    display: none;
+  }
+  
+  }
 
 @media only screen and (max-width: 960px) {
 
