@@ -17,6 +17,17 @@
   font-family: "Euclid Circular B", sans-serif;
 }
 
+body {
+  background: rgb(245, 245, 245);
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: rgba(34, 34, 34, 0.1) 0px 0px 4px 0px;
+}
+
 h1 {
   font-size: 56px;
   line-height: 71px;
@@ -395,11 +406,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 50px 0;
   max-width: 1200px;
+}
+
+.gallery {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .img_container {
@@ -434,12 +448,13 @@ img {
 }
 
 .similar_story {
-  max-width: calc(50% - 25px);
-  min-width: calc(33% - 50px);
+  max-width: calc(33% - 30px);
+  min-width: calc(33% - 30px);
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-decoration: none;
+  margin: 20px;
 }
 
 .similar_story img {
@@ -448,6 +463,12 @@ img {
 
 .similar_story p{
   font-weight: 500;
+}
+
+.similar_title_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .breadcrumbs {
@@ -608,7 +629,7 @@ h3 + .img_fw {
   margin-top: 0px;
 }
 
-.img_container:nth-child(n+2), .similar_story:nth-child(n+2) {
+.img_container:nth-child(n+2) {
   margin-left: 50px;
 }
 
@@ -629,13 +650,71 @@ h3 + .img_fw {
   margin-right: 10px;
 }
 
-.similar_story:nth-child(3n+4) {
+.similar_story:nth-child(3n+1) {
   margin-left: 0;
 }
 
 .similar h3 {
   margin: 0;
 }
+
+footer {
+  width: 100%;
+  background: #353F52;
+}
+
+.footer_content {
+  display: flex;
+  width: calc(100% - 40px);
+  max-width: 1240px;
+  padding: 50px 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_left, .footer_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_right {
+  flex-direction: column;
+}
+
+footer ul {
+  margin-right: 50px;
+}
+
+.footer_link, .footer_title{
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1;
+  display: block;
+}
+
+.footer_title {
+  opacity: 0.5;
+}
+
+footer p, .footer_right a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67;
+  margin: 0px 0px 6px;
+  padding: 0px;
+}
+
+.footer_right a {
+  font-weight: 500;
+}
+
 
 /* Media Queries */
 
